@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server"
 
-const dummyUsers = [{ id: 1, name: 'Asraful Islam', email: 'asraful@example.com', role: 'admin' },
+export const dummyUsers = [{ id: 1, name: 'Asraful Islam', email: 'asraful@example.com', role: 'admin' },
 { id: 2, name: 'Sarah Khan', email: 'sarah@example.com', role: 'editor' },
 { id: 3, name: 'John Doe', email: 'john@example.com', role: 'user' },
 { id: 4, name: 'Mehedi Hasan', email: 'mehedi@example.com', role: 'user' },

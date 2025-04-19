@@ -32,6 +32,7 @@
 // }
 
 import { apiRequest } from "@/utils/apiCall";
+import Link from "next/link";
 
 // export default page
 
@@ -79,12 +80,12 @@ const page = async() => {
       <h1 className='font-bold text-center text-2xl my-5'>Products Details</h1>
       <div className="products flex gap-3 flex-wrap px-10" >
      {data.length > 0 &&  data.map((user,index)=>{
-          const {name,email,id} =user;
+          const {name,id} =user;
           return(
                <div className="product p-5"  key={index}  style={{border: '1px solid'}}>
                     <p>{id}</p>
                     <h1 className='font-bold'>{name}</h1>
-                    <p>{email}</p>
+                    <Link href={`/apicall/${id}`}><button className=" bg-green-500 px-5 border rounded-xl cursor-pointer">See user</button></Link>
                </div>
           )
       })}
