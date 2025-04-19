@@ -1,11 +1,15 @@
-import React from 'react'
+import getGenerateMetadata from "../components/GenerateMetaData";
 
-const page = () => {
+const  page = () => {
   return (
-    <div className="text-amber-300 text-center">
-      hello i am page
-    </div>
+    <>
+      <div className="text-amber-300 text-center">
+        hello i am page
+      </div>
+    </>
   )
 }
+export default page ;
 
-export default page
+export const generateMetadata =()=>getGenerateMetadata('about','about me page')
+

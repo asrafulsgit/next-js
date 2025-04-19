@@ -1,7 +1,6 @@
 import { use } from "react"
 const page = (props) => {
   const {studentDetails} = use(props.params)
-  console.log(studentDetails)
   return (
     <div> 
       <h1>Email : {studentDetails[0]}</h1>

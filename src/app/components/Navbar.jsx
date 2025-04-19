@@ -9,6 +9,7 @@ const Navbar = () => {
           <Link href='/about' >About</Link>
           <Link href='/contact' >Contact</Link>
           <Link href='/student' >Student</Link>
+          <Link href='/apicall' >Api Call</Link>
           <Link href='/profile' >Profile</Link>
        </nav>
     </div>

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import getGenerateMetadata from '../components/GenerateMetaData';
 const page = () => {
      const students = [
           { id: 1, name: "Ayaan Rahman", age: 16, grade: "10th", email: "ayaan@example.com" },
@@ -26,3 +27,5 @@ const page = () => {
 }
 
 export default page
+
+export const generateMetadata =()=>getGenerateMetadata('student','this is student page')
