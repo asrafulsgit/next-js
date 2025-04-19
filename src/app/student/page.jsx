@@ -17,7 +17,7 @@ const page = () => {
      <nav className='flex flex-col gap-2'>
           {
                students.map((student,index)=>{
-                   return <Link key={index} href={`/student/${student.id}`}>{student.name}</Link>
+                   return <Link key={index} href={`/student/${student.email}/${student.id}`}>{student.name}</Link>
                })
           }
      </nav>
